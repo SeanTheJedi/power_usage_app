@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electricity Bill Calculator"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Morning Usage (kwh)"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp" />
+
+    <EditText
+        android:id="@+id/et_morning_usage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter morning usage in kwh"
+        android:background="@drawable/et_style"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evening Usage (kwh)"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp" />
+
+    <EditText
+        android:id="@+id/et_evening_usage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter evening usage in kwh"
+        android:background="@drawable/et_style"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:inputType="numberDecimal"/>
+
+    <Switch
+        android:id="@+id/sw_renewable"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Use renewable energy source?"
+        android:textSize="16sp"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/tv_error_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1100"
+        android:background="#40FF1100"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:text="Error: All fields be filled in"
+        android:visibility="gone"
+        android:textSize="24sp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/btn_style2"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style1"
+            android:text="Calculate"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_rcpt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_rcpt_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+
+    <LinearLayout
+        android:id="@+id/lt_rcpt_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#F2E599"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_rcpt_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
