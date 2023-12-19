@@ -13,6 +13,7 @@ This is an android applicatio that lets user calculate their electricity power u
 <h2>Tools and Framework Used:</h2>
 <ul>
   <li>Kotlin</li>
+  <li>Android</li>
   <li>Android Studio</li>
 </ul>
 
